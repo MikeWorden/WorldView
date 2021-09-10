@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC6BB4126EAFA5000752D2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6BB4026EAFA5000752D2D /* MapViewController.swift */; };
 		0FFD017B26D2AE6500A6A5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD017A26D2AE6500A6A5C3 /* AppDelegate.swift */; };
 		0FFD017D26D2AE6500A6A5C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD017C26D2AE6500A6A5C3 /* SceneDelegate.swift */; };
-		0FFD017F26D2AE6500A6A5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD017E26D2AE6500A6A5C3 /* ViewController.swift */; };
+		0FFD017F26D2AE6500A6A5C3 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD017E26D2AE6500A6A5C3 /* ConversionViewController.swift */; };
 		0FFD018226D2AE6500A6A5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD018026D2AE6500A6A5C3 /* Main.storyboard */; };
 		0FFD018526D2AE6500A6A5C3 /* WorldView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD018326D2AE6500A6A5C3 /* WorldView.xcdatamodeld */; };
 		0FFD018726D2AE6600A6A5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFD018626D2AE6600A6A5C3 /* Assets.xcassets */; };
@@ -36,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FC6BB4026EAFA5000752D2D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0FFD017726D2AE6500A6A5C3 /* WorldView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFD017A26D2AE6500A6A5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FFD017C26D2AE6500A6A5C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0FFD017E26D2AE6500A6A5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FFD017E26D2AE6500A6A5C3 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		0FFD018126D2AE6500A6A5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FFD018426D2AE6500A6A5C3 /* WorldView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldView.xcdatamodel; sourceTree = "<group>"; };
 		0FFD018626D2AE6600A6A5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		0FFD016E26D2AE6500A6A5C3 = {
 			isa = PBXGroup;
 			children = (
+				0FC6BB4026EAFA5000752D2D /* MapViewController.swift */,
 				0FFD017926D2AE6500A6A5C3 /* WorldView */,
 				0FFD019326D2AE6700A6A5C3 /* WorldViewTests */,
 				0FFD019E26D2AE6700A6A5C3 /* WorldViewUITests */,
@@ -103,7 +106,7 @@
 			children = (
 				0FFD017A26D2AE6500A6A5C3 /* AppDelegate.swift */,
 				0FFD017C26D2AE6500A6A5C3 /* SceneDelegate.swift */,
-				0FFD017E26D2AE6500A6A5C3 /* ViewController.swift */,
+				0FFD017E26D2AE6500A6A5C3 /* ConversionViewController.swift */,
 				0FFD018026D2AE6500A6A5C3 /* Main.storyboard */,
 				0FFD018626D2AE6600A6A5C3 /* Assets.xcassets */,
 				0FFD018826D2AE6600A6A5C3 /* LaunchScreen.storyboard */,
@@ -261,9 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFD017F26D2AE6500A6A5C3 /* ViewController.swift in Sources */,
+				0FFD017F26D2AE6500A6A5C3 /* ConversionViewController.swift in Sources */,
 				0FFD018526D2AE6500A6A5C3 /* WorldView.xcdatamodeld in Sources */,
 				0FFD017B26D2AE6500A6A5C3 /* AppDelegate.swift in Sources */,
+				0FC6BB4126EAFA5000752D2D /* MapViewController.swift in Sources */,
 				0FFD017D26D2AE6500A6A5C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

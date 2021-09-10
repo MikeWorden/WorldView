@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConversionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let firstFrame=CGRect(x: 160, y: 240, width: 100, height: 150)
