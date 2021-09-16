@@ -10,6 +10,7 @@ import UIKit
 class ConversionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        print( "ConversionViewController loaded its view.")
         let firstFrame=CGRect(x: 160, y: 240, width: 100, height: 150)
         let firstView = UIView(frame: firstFrame)
         firstView.backgroundColor = UIColor.blue

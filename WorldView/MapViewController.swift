@@ -8,5 +8,8 @@
 import UIKit
 
 class MapViewController:  UIViewController {
+    override func viewDidLoad() {
+        print ("MapViewController laoded its view.")
+    }
     
 }
