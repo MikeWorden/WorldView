@@ -73,10 +73,6 @@
         <scene sceneID="Zub-uR-zzb">
             <objects>
                 <viewController id="kJd-hc-Oe6" customClass="MapViewController" customModule="WorldView" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="F2s-tq-y1f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="m4l-h1-SbR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ypm-L2-8TR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -89,22 +85,83 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="z3E-dh-7gh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="41M-r3-YQw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="2cO-5z-6Bm"/>
                         <segue destination="kJd-hc-Oe6" kind="relationship" relationship="viewControllers" id="1X0-oe-sUU"/>
+                        <segue destination="MZc-pU-pPJ" kind="relationship" relationship="viewControllers" id="dcm-Wv-F9c"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5h-Os-IXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1176.8115942028987" y="-145.3125"/>
         </scene>
+        <!--Quiz-->
+        <scene sceneID="qDY-5y-4rA">
+            <objects>
+                <viewController id="MZc-pU-pPJ" customClass="QuizViewController" customModule="WorldView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cli-Fw-4VP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCd-t9-HXv">
+                                <rect key="frame" x="194.5" y="124" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5f-h3-GrV">
+                                <rect key="frame" x="158" y="183" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="MZc-pU-pPJ" eventType="touchUpInside" id="czX-a8-d0h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3h-UZ-A7l">
+                                <rect key="frame" x="194.5" y="438" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkO-is-QeI">
+                                <rect key="frame" x="160.5" y="522" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="MZc-pU-pPJ" eventType="touchUpInside" id="o1J-m5-eV2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5aG-2Z-7Va"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XCd-t9-HXv" firstAttribute="centerX" secondItem="Cli-Fw-4VP" secondAttribute="centerX" id="ARZ-UW-8Kp"/>
+                            <constraint firstItem="m3h-UZ-A7l" firstAttribute="centerX" secondItem="Cli-Fw-4VP" secondAttribute="centerX" id="BQu-PO-VzP"/>
+                            <constraint firstItem="XCd-t9-HXv" firstAttribute="top" secondItem="5aG-2Z-7Va" secondAttribute="top" constant="80" id="LH1-1Q-Mzu"/>
+                            <constraint firstItem="lkO-is-QeI" firstAttribute="centerX" secondItem="Cli-Fw-4VP" secondAttribute="centerX" id="URR-xb-thG"/>
+                            <constraint firstItem="m3h-UZ-A7l" firstAttribute="top" secondItem="H5f-h3-GrV" secondAttribute="bottom" constant="225" id="Xf6-tm-0aS"/>
+                            <constraint firstItem="H5f-h3-GrV" firstAttribute="centerX" secondItem="Cli-Fw-4VP" secondAttribute="centerX" id="gnd-ii-u2b"/>
+                            <constraint firstItem="H5f-h3-GrV" firstAttribute="top" secondItem="XCd-t9-HXv" secondAttribute="bottom" constant="38" id="lFY-xx-4nP"/>
+                            <constraint firstItem="lkO-is-QeI" firstAttribute="top" secondItem="m3h-UZ-A7l" secondAttribute="bottom" constant="63" id="owA-4l-wRz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="pencil.circle" catalog="system" id="0b9-wD-0bo"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="m3h-UZ-A7l" id="sgG-fx-EqM"/>
+                        <outlet property="questionLabel" destination="XCd-t9-HXv" id="gZy-Qb-WN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9H-mN-BXY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="-145"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ConvertIcon" width="48.5" height="32.5"/>
         <image name="MapIcon" width="48.5" height="32.5"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
